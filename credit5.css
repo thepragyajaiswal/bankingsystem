@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    padding: 4px;
+    overflow: hidden;
+   
+}
+
+.container h1,p{
+    text-align: center;
+}
+
+h1{
+    font-size: 100%;
+    color: rgb(38 58 13);
+}
+
+p{
+    font-size: 70%;
+    margin-bottom: 31px;
+    color: rgb(53 76 50);
+}
+
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+button{
+    margin-bottom: 1%;
+}
+.btn{
+    
+    padding: 15px 99px;
+    color: whitesmoke;
+    background-color:rgb(56 95 17 / 79%);
+    font-size: 25px;
+    font-family: ui-serif;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 45px; 
+    position: relative;
+
+}
+
+.btn:hover {
+    box-shadow: 0 5px 5px 0 rgba(3, 37, 7, 0.6),0 10px 20px 0 rgba(3, 37, 7, 0.6);
+    transition-duration: 0.4s;
+  }
+
+th{
+    font-size: 25px;
+    font-family: ui-serif;
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    background-color: rgb(56 95 17 / 70%);
+    color: whitesmoke;
+}
+td{
+    font-size: 45%;    
+}
+tr:nth-child(even) {background-color: rgb(56 95 17 / 50%)}
+
+.centre{
+    margin: 20px auto 12px auto;
+    width: 60%;   
+    overflow-x:auto;
+}
+   
+
+table{
+    border-collapse: collapse;
+    width:100%;    
+}   
+   
+th,td{
+    border-bottom: 1px solid green;
+    padding: 4px;
+    text-align: center;
+}
+
+.transaction{
+    width:60%;
+    margin:auto;
+    margin-top: 20px;
+    padding-top:15px ;
+    background-color:rgb(56 95 17 / 55%) ;
+    overflow: hidden;
+}
+
+label{
+    font-size: 60%;
+    margin-left: 15%;
+    padding-bottom: 1px;
+    
+}
+select{font-size: 40%;}
+.sel{
+    width: 220px;
+    height:40px;
+    margin-bottom: 1px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 8px;
+    
+}
+
+.credit{
+    max-width: 200px;
+    height:30px;
+    padding-bottom: 4px;
+    background-color: white;
+    opacity: 0.7;
+    font-size: 37%;
+    margin-bottom: 40px;
+}
+
+.sel option{
+    font-size: 100%;
+    background-color: rgb(84 144 35 / 51%);    
+}
+
+/*make website responsive*/
+
+
+/* for desktop/ landscape------------------*/
+@media (min-width: 1000px){
+    .container{max-width: 100%;}
+    .transaction{max-width: 60%;}
+}
+
+/* for tablet/ low resulation desktop/ laptop------------------*/
+@media (max-width: 999px){
+    .container{max-width: 100%;}
+    .transaction{max-width: 60%;}
+}
+
+
+
+
+/* for potrait tablet / kindle ------------------*/
+@media (max-width: 900px){
+    .transaction{max-width: 60%;}
+    .transaction label{font-size: 55%; margin-left: 10%;}
+    .transaction select{font-size: 35%;}
+    .btn{font-size: 20px;}
+}
+
+/* for smart phone ------------------*/
+@media (max-width: 840px){
+    h1{font-size: 90%;}
+    .transaction{max-width:60%;}
+    .transaction label{font-size: 52%; margin-left: 10%;}
+    .transaction select{font-size: 30%;}
+    .sel{width:200px}
+    .credit{
+        max-width: 200px;
+        height:27px;
+        padding-bottom: 3px;}
+        .btn{font-size: 20px;padding: 9px 90px;}
+}
+
+/* for android ------------------*/
+@media (max-width: 760px){
+    h1{font-size: 80%;}
+    .transaction{max-width: 90%;}
+    .transaction label{font-size: 45%; margin-left: 5%;}
+    .transaction select{font-size: 30%;}
+    .sel{width:160px}
+    .credit{
+        max-width: 200px;
+        height:27px;
+        padding-bottom: 3px;}
+    .btn{font-size: 20px; padding: 8px 85px;}
+    .centre{min-width: 80%;}
+}
+
+@media (max-width: 610px){
+    h1{font-size: 70%;}
+    .transaction{min-width: 80%;}
+    .transaction label{font-size: 40%; margin-left: 4%;}
+    .transaction select{font-size: 30%;}
+    .sel{width:120px}
+    .credit{
+        max-width: 200px;
+        height:27px;
+        padding-bottom: 3px;}
+    .btn{font-size: 20px; padding: 8px 85px;}
+    .centre{min-width: 100%;}
+    td{font-size: 42%;}      
+    th{font-size: 24px;}  
+}
+
+
+@media (max-width: 400px){
+    h1{font-size: 60%;}
+    p{font-size: 50%;}
+    .transaction{min-width: 85%;}
+    .transaction label{font-size: 40%; margin-left: 4%;}
+    .transaction select{font-size: 30%;}
+    .sel{width:120px}
+    .credit{
+        max-width: 200px;
+        height:27px;
+        padding-bottom: 3px;}
+    .btn{font-size: 20px; padding: 7px 50px;}
+    .centre{min-width: 100%;}
+    td{font-size: 39%;}      
+    th{font-size: 20px;}    
+}
+
+@media (max-width: 360px){
+    .transaction{min-width: 98%;}
+    .transaction label{font-size: 38%; margin-left: 2%;}
+    .transaction select{font-size: 26%;}
+    .sel{min-width:160px;margin-left: 10px;}
+    .credit{
+        max-width: 160px;
+        height:27px;
+        padding-bottom: 3px;}
+    .btn{font-size: 20px; padding: 7px 50px;}
+    .bgimg{max-width: 100%; overflow-y: hidden;}
+}
